@@ -1,0 +1,66 @@
+/* top list */
+.teamItems_element_stats .teamItems_element_count:nth-child(2) {
+  display: none;
+}
+/* article list */
+.teamRecordList_listElement_lgtmsCount {
+  display: none;
+}
+/* article */
+.teamArticle_header_actions .teamArticle_header_action:nth-child(2) {
+  position: relative;
+  visibility: hidden;
+  min-width: 65px;
+}
+.likeButtonWithLikers {
+  visibility: hidden;
+}
+.likeButtonWithLikers_count {
+  display: none !important;
+}
+.likeButtonWithLikers_users {
+  display: none !important;
+}
+/* global notifications */
+.globalNotifications {
+  visibility: hidden;
+}
+/* top sidenavi likelist */
+.teamSidebarContainer_likesSection_list {
+  position: relative;
+  visibility: hidden;
+}
+/* monta */
+.hide-iine__monta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fef49c;
+  -webkit-box-shadow: 1px 1px  10px rgba(0,0,0,0.4);
+  -webkit-transition: all 300ms ease-out;
+}
+.hide-iine__monta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 10px 10px 0;
+  border-style: solid;
+  border-color: #fff #fff #edb918 #edb918;
+  display: block;
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  -webkit-transition: all 300ms ease-in;
+}
+.hide-iine__monta.removing {
+  width: 0;
+  height: 0;
+}
+.hide-iine__monta.removing:before {
+  border-width: 0 75px 75px 0;
+  opacity: 0.15;
+}
