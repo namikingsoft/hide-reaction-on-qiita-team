@@ -22,8 +22,8 @@
   display: none !important;
 }
 /* global notifications */
-.globalNotifications {
-  visibility: hidden;
+.globalNotificationContents_listItem {
+  display: none;
 }
 /* top sidenavi likelist */
 .teamSidebarContainer_likesSection_list {

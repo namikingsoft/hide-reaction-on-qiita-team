@@ -36,7 +36,21 @@ Array.prototype.forEach.call(likeButtons, function(element) {
 })
 
 // subtract iine on notifications
-var notifications = document.querySelectorAll('.globalNotifications')
-Array.prototype.forEach.call(notifications, function(element) {
-  element.style.visibility = 'visible'
+var notiSurface = document.querySelectorAll('.globalNotifications__surface')[0]
+notiSurface.addEventListener('click', function(e) {
+  var count = 0
+  var timerId = setInterval(function() {
+    var notiList = document.querySelectorAll(
+      '.globalNotificationContents_listItem'
+    )
+    if (notiList.length > 0 || ++count > 20) {
+      clearInterval(timerId);
+      var maxNum = notiSurface.textContent
+      Array.prototype.forEach.call(notiList, function(element) {
+        if (!/いいね!/.test(element.textContent) && maxNum-- > 0) {
+          element.style.display = 'block';
+        }
+      })
+    }
+  }, 100)
 })
