@@ -40,7 +40,7 @@
   cursor: pointer;
   background-color: #fef49c;
   -webkit-box-shadow: 1px 1px  10px rgba(0,0,0,0.4);
-  -webkit-transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-in;
 }
 .hide-iine__monta:before {
   content: "";
@@ -59,8 +59,10 @@
 .hide-iine__monta.removing {
   width: 0;
   height: 0;
+  left: -50%;
+  bottom: -50%;
 }
 .hide-iine__monta.removing:before {
-  border-width: 0 75px 75px 0;
+  border-width: 0 75px 50px 0;
   opacity: 0.15;
 }
