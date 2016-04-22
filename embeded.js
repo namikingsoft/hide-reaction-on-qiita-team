@@ -1,27 +1,18 @@
-// create monta element
-var monta = document.createElement('div')
-monta.setAttribute('class', 'hide-iine__monta')
-monta.addEventListener('click', function(e) {
-  e.stopImmediatePropagation()
-  var self = this
-  self.classList.add('removing')
-  setTimeout(function() { self.parentNode.removeChild(self) }, 350)
-})
-
-// add monta on like list
-var likelists = document.querySelectorAll(
-  '.teamSidebarContainer_likesSection_list'
-)
-Array.prototype.forEach.call(likelists, function(element) {
-  element.appendChild(monta)
-  element.style.visibility = 'visible'
-})
-
-// add monta on article like
+// add monta on some elements
 var articleLikes = document.querySelectorAll(
+  '.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers,' +
   '.teamArticle_header_actions .teamArticle_header_action:nth-child(2)'
 )
 Array.prototype.forEach.call(articleLikes, function(element) {
+  // create monta element
+  var monta = document.createElement('div')
+  monta.setAttribute('class', 'hide-iine__monta')
+  monta.addEventListener('click', function(e) {
+    e.stopImmediatePropagation()
+    var self = this
+    self.classList.add('removing')
+    setTimeout(function() { self.parentNode.removeChild(self) }, 350)
+  })
   element.appendChild(monta)
   element.style.visibility = 'visible'
 })

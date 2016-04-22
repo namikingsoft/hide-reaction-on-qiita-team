@@ -26,7 +26,7 @@
   display: none;
 }
 /* top sidenavi likelist */
-.teamSidebarContainer_likesSection_list {
+.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers {
   position: relative;
   visibility: hidden;
 }
