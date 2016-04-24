@@ -19,7 +19,11 @@
   display: none !important;
 }
 .likeButtonWithLikers_users {
-  display: none !important;
+  position: relative;
+  display: block !important;
+  margin-top: 1em !important;
+  padding: 1em;
+  visibility: hidden;
 }
 /* global notifications */
 .globalNotificationContents_listItem {

@@ -1,10 +1,5 @@
-// add monta on some elements
-var articleLikes = document.querySelectorAll(
-  '.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers,' +
-  '.teamArticle_header_actions .teamArticle_header_action:nth-child(2)'
-)
-Array.prototype.forEach.call(articleLikes, function(element) {
-  // create monta element
+// create monta
+function createMontaElement() {
   var monta = document.createElement('div')
   monta.setAttribute('class', 'hide-iine__monta')
   monta.addEventListener('click', function(e) {
@@ -13,6 +8,18 @@ Array.prototype.forEach.call(articleLikes, function(element) {
     self.classList.add('removing')
     setTimeout(function() { self.parentNode.removeChild(self) }, 350)
   })
+  return monta
+}
+
+// add monta on some elements
+var willAddMontaElements = document.querySelectorAll(
+  '.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers,' +
+  '.teamArticle_header_actions .teamArticle_header_action:nth-child(2),' +
+  '.likeButtonWithLikers_users'
+)
+Array.prototype.forEach.call(willAddMontaElements, function(element) {
+  // create monta element
+  var monta = createMontaElement()
   element.appendChild(monta)
   element.style.visibility = 'visible'
 })
