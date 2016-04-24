@@ -1,39 +1,3 @@
-/* top list */
-.teamItems_element_stats .teamItems_element_count:nth-child(2) {
-  display: none;
-}
-/* article list */
-.teamRecordList_listElement_lgtmsCount {
-  display: none;
-}
-/* article */
-.teamArticle_header_actions .teamArticle_header_action:nth-child(2) {
-  position: relative;
-  visibility: hidden;
-  min-width: 65px;
-}
-.likeButtonWithLikers {
-  visibility: hidden;
-}
-.likeButtonWithLikers_count {
-  display: none !important;
-}
-.likeButtonWithLikers_users {
-  position: relative;
-  display: block !important;
-  margin-top: 1em !important;
-  padding: 1em;
-  visibility: hidden;
-}
-/* global notifications */
-.globalNotificationContents_listItem {
-  display: none;
-}
-/* top sidenavi likelist */
-.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers {
-  position: relative;
-  visibility: hidden;
-}
 /* monta */
 .hide-iine__monta {
   position: absolute;
@@ -69,4 +33,44 @@
 .hide-iine__monta.removing:before {
   border-width: 0 75px 50px 0;
   opacity: 0.15;
+}
+
+/* added monta elements */
+.teamArticle_header_actions .teamArticle_header_action:nth-child(2),
+.likeButtonWithLikers_users,
+.teamSidebarContainer_likesSection_list,
+.teamSidebarContainer_likesUsers {
+  position: relative;
+  visibility: hidden;
+}
+
+/* top list */
+.teamItems_element_stats .teamItems_element_count:nth-child(2) {
+  display: none;
+}
+
+/* article list */
+.teamRecordList_listElement_lgtmsCount {
+  display: none;
+}
+
+/* article */
+.teamArticle_header_actions .teamArticle_header_action:nth-child(2) {
+  min-width: 65px;
+}
+.likeButtonWithLikers {
+  visibility: hidden;
+}
+.likeButtonWithLikers_count {
+  display: none !important;
+}
+.likeButtonWithLikers_users {
+  display: block !important;
+  margin-top: 1em !important;
+  padding: 1em;
+}
+
+/* global notifications */
+.globalNotificationContents_listItem {
+  display: none;
 }
