@@ -69,8 +69,3 @@
   margin-top: 1em !important;
   padding: 1em;
 }
-
-/* global notifications */
-.globalNotificationContents_listItem {
-  display: none;
-}
