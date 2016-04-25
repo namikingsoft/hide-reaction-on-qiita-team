@@ -68,4 +68,5 @@
   display: block !important;
   margin-top: 1em !important;
   padding: 1em;
+  min-height: 175px;
 }
