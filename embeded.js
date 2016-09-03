@@ -14,8 +14,8 @@ function createMontaElement() {
 // add monta on some elements
 var willAddMontaElements = document.querySelectorAll(
   '.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers,' +
-  '.teamArticle_header_actions .teamArticle_header_action:nth-child(1),' + // stock
-  '.teamArticle_header_actions .teamArticle_header_action:nth-child(2),' + // like
+  '.teamArticle_header_action:nth-child(1) .teamArticle_header_count,' + // stock
+  '.teamArticle_header_action:nth-child(2) .teamArticle_header_count,' + // like
   '.likeButtonWithLikers_users'
 )
 Array.prototype.forEach.call(willAddMontaElements, function(element) {
