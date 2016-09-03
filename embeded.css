@@ -36,8 +36,8 @@
 }
 
 /* added monta elements */
-.teamArticle_header_actions .js-stock-button,
-.teamArticle_header_actions .js-like-button,
+.teamArticle_header_actions .teamArticle_header_action:nth-child(1), /* stock */
+.teamArticle_header_actions .teamArticle_header_action:nth-child(2), /* like */
 .likeButtonWithLikers_users,
 .teamSidebarContainer_likesSection_list,
 .teamSidebarContainer_likesUsers {
@@ -56,8 +56,8 @@
 }
 
 /* article */
-.teamArticle_header_actions .js-stock-button,
-.teamArticle_header_actions .js-like-button {
+.teamArticle_header_actions .teamArticle_header_action:nth-child(1) , /* stock */
+.teamArticle_header_actions .teamArticle_header_action:nth-child(2) { /* like */
   min-width: 65px;
 }
 .likeButtonWithLikers {
