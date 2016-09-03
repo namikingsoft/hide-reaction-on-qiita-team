@@ -14,6 +14,7 @@ function createMontaElement() {
 // add monta on some elements
 var willAddMontaElements = document.querySelectorAll(
   '.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers,' +
+  '.teamArticle_header_actions .js-stock-button,' +
   '.teamArticle_header_actions .js-like-button,' +
   '.likeButtonWithLikers_users'
 )
