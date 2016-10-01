@@ -15,8 +15,6 @@ function createMontaElement() {
 var willAddMontaElements = document.querySelectorAll(
   '.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers,' +
   '.teamArticle_header_action:nth-child(1) .teamArticle_header_count,' + // stock
-  '.teamArticle_header_action:nth-child(2) .teamArticle_header_count,' + // like
-  '.likeButtonWithLikers_users,' +
   '.reaction_contents'
 )
 Array.prototype.forEach.call(willAddMontaElements, function(element) {
@@ -25,13 +23,4 @@ Array.prototype.forEach.call(willAddMontaElements, function(element) {
   element.style.position = 'relative'
   element.style.visibility = 'visible'
   element.appendChild(monta)
-})
-
-// likeButtonWithLikers
-var likeButtons = document.querySelectorAll('.likeButtonWithLikers')
-Array.prototype.forEach.call(likeButtons, function(element) {
-  var isPostOwner = document.querySelectorAll('.currentUser').length > 0 // @todo
-  if (!isPostOwner) {
-    element.style.visibility = 'visible'
-  }
 })

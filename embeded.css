@@ -37,8 +37,6 @@
 
 /* added monta elements */
 .teamArticle_header_action:nth-child(1) .teamArticle_header_count, /* stock */
-.teamArticle_header_action:nth-child(2) .teamArticle_header_count, /* like */
-.likeButtonWithLikers_users,
 .reaction_contents,
 .teamSidebarContainer_likesSection_list,
 .teamSidebarContainer_likesUsers {
@@ -56,22 +54,9 @@
 }
 
 /* article */
-.teamArticle_header_action:nth-child(1) .teamArticle_header_count , /* stock */
-.teamArticle_header_action:nth-child(2) .teamArticle_header_count { /* like */
+.teamArticle_header_action:nth-child(1) .teamArticle_header_count { /* stock */
   display: inline-block;
   min-width: 50px;
-}
-.likeButtonWithLikers {
-  visibility: hidden;
-}
-.likeButtonWithLikers_count {
-  display: none !important;
-}
-.likeButtonWithLikers_users {
-  display: block !important;
-  margin-top: 1em !important;
-  padding: 1em;
-  min-height: 175px;
 }
 
 /* reaction contents */
