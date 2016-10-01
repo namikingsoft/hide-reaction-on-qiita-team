@@ -73,3 +73,8 @@
   padding: 1em;
   min-height: 175px;
 }
+
+/* reaction contents */
+.reaction_contents {
+  min-height: 80px;
+}
