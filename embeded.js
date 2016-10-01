@@ -21,8 +21,9 @@ var willAddMontaElements = document.querySelectorAll(
 Array.prototype.forEach.call(willAddMontaElements, function(element) {
   // create monta element
   var monta = createMontaElement()
-  element.appendChild(monta)
+  element.style.position = 'relative'
   element.style.visibility = 'visible'
+  element.appendChild(monta)
 })
 
 // likeButtonWithLikers

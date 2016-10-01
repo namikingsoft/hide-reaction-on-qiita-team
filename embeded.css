@@ -41,7 +41,6 @@
 .likeButtonWithLikers_users,
 .teamSidebarContainer_likesSection_list,
 .teamSidebarContainer_likesUsers {
-  position: relative;
   visibility: hidden;
 }
 
