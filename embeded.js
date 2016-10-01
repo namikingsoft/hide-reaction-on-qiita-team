@@ -16,7 +16,8 @@ var willAddMontaElements = document.querySelectorAll(
   '.teamSidebarContainer_likesSection_list, .teamSidebarContainer_likesUsers,' +
   '.teamArticle_header_action:nth-child(1) .teamArticle_header_count,' + // stock
   '.teamArticle_header_action:nth-child(2) .teamArticle_header_count,' + // like
-  '.likeButtonWithLikers_users'
+  '.likeButtonWithLikers_users,' +
+  '.reaction_contents'
 )
 Array.prototype.forEach.call(willAddMontaElements, function(element) {
   // create monta element

@@ -39,6 +39,7 @@
 .teamArticle_header_action:nth-child(1) .teamArticle_header_count, /* stock */
 .teamArticle_header_action:nth-child(2) .teamArticle_header_count, /* like */
 .likeButtonWithLikers_users,
+.reaction_contents,
 .teamSidebarContainer_likesSection_list,
 .teamSidebarContainer_likesUsers {
   visibility: hidden;
