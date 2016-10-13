@@ -61,5 +61,5 @@
 
 /* reaction contents */
 .reaction_contents {
-  min-height: 80px;
+  min-height: 80px !important;
 }
